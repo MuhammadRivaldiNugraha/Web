@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #26332c;
+}
+
+header {
+  padding: 40px;
+  background-color: #edf5ef;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+section {
+  height: 300px;
+  padding: 20px;
+  border-bottom: 1px solid #cccccc;
+  box-sizing: border-box;
+}
+
+#tombol-atas {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #287653;
+  color: white;
+  font-size: 24px;
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+#tombol-atas:hover {
+  opacity: 1;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Tombol Kembali ke Atas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="atas">
+    <h1>Catatan Perjalanan</h1>
+    <p>Perjalanan singkat menikmati alam.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Pagi Hari</h2>
+      <p>Udara pagi terasa sejuk saat perjalanan dimulai.</p>
+    </section>
+
+    <section>
+      <h2>Jalan Setapak</h2>
+      <p>Jalan kecil melewati pepohonan yang rindang.</p>
+    </section>
+
+    <section>
+      <h2>Di Tepi Danau</h2>
+      <p>Air danau terlihat tenang dan jernih.</p>
+    </section>
+
+    <section>
+      <h2>Istirahat</h2>
+      <p>Beristirahat sebentar sebelum melanjutkan perjalanan.</p>
+    </section>
+
+    <section>
+      <h2>Pemandangan Bukit</h2>
+      <p>Dari atas bukit, terlihat pemandangan yang indah.</p>
+    </section>
+
+    <section>
+      <h2>Sore Hari</h2>
+      <p>Matahari mulai terbenam dan langit berubah warna.</p>
+    </section>
+
+    <section>
+      <h2>Akhir Perjalanan</h2>
+      <p>Perjalanan selesai dengan banyak kenangan.</p>
+    </section>
+  </main>
+
+  <button id="tombol-atas" onclick="kembaliKeAtas()">↑</button>
+
+  <script>
+    function cekScroll() {
+      var tombol = document.getElementById("tombol-atas");
+
+      if (window.scrollY > 500) {
+        tombol.style.display = "block";
+      } else {
+        tombol.style.display = "none";
+      }
+    }
+
+    function kembaliKeAtas() {
+      window.scrollTo(0, 0);
+    }
+
+    window.onscroll = cekScroll;
+  </script>
+</body>
+</html>
