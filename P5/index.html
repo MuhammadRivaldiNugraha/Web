@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Visibility</title>
+</head>
+<body>
+    <input type="password" id="password">
+
+    <br><br>
+
+    <input type="checkbox" id="show" onclick="showPassword()">
+    <label for="show">Show</label>
+
+    <script>
+        function showPassword() {
+            var password = document.getElementById("password");
+
+            if (document.getElementById("show").checked) {
+                password.type = "text";
+            } else {
+                password.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>
